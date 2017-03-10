@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.com.mismapas.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alemania"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brasil"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingRight="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageView_place1"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:src="@drawable/alemania"
+                android:layout_weight="1"
+                android:onClick="clicMapAlemania"/>
+
+            <ImageView
+                android:id="@+id/imageView_place2"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:src="@drawable/brasil"
+                android:layout_weight="1"
+                android:onClick="clicMapBrasil"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Canada"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Italia"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingRight="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:id="@+id/imageView_place3"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:src="@drawable/canada"
+                android:layout_weight="1"
+                android:onClick="clicMapCanada"/>
+
+            <ImageView
+                android:id="@+id/imageView_place4"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:src="@drawable/italia"
+                android:layout_weight="1"
+                android:onClick="clicMapItalia"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
